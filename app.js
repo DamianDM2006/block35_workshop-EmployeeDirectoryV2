@@ -3,8 +3,7 @@ import employeeRouter from "./api/employees.js";
 const app = express();
 export default app;
 
-
-import employees from "#db/employees";
+app.use(express.json());
 
 app.get("/", (req, res) => {
   res.send("Hello employees!");

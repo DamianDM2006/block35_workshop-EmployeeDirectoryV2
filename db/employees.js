@@ -15,7 +15,7 @@ const employees = [
 export default employees;
 
 export const addNewEmployee = (name) => {
-  const newEmployee = { id: employees.length + 1, name};
+  const newEmployee = { id: employees.length + 1, name };
   employees.push(newEmployee);
   return newEmployee;
 };

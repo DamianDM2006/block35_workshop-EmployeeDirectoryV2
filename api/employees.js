@@ -31,5 +31,5 @@ employeeRouter.post("/", (req, res, next) => {
   if (!name) return res.status(400).send(`empty string in name`);
 
   const employee = addNewEmployee(name);
-  res.status(201).send(`${employee} has been added succesfully.`);
+  res.status(201).send(employee);
 });
